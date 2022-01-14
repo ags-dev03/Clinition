@@ -1,0 +1,382 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Emergency.View.Admin.Dashboard.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="utf-8">
+    <%: Styles.Render("~/bundles/DashCSS") %>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="theme-blush">
+    <%-- <div class="loaderShow">
+        <div class="loader"></div>
+    </div>--%>
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img class="zmdi-hc-spin" src="/assets/images/loader.svg" width="48" height="48" alt="CCS">
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <form id="form1" runat="server" autocomplete="off">
+        <asp:ScriptManager ID="ScriptManager1" EnablePartialRendering="true" runat="server"></asp:ScriptManager>
+        <asp:HiddenField ID="hdn_Menus" runat="server" />
+        <asp:HiddenField ID="hdn_Type" runat="server" />
+        <asp:HiddenField ID="hdn_usrID" runat="server" />
+        <asp:HiddenField ID="hdn_currenturl" runat="server" />
+
+
+
+        <div class="navbar-right">
+            <button class="btn bgdarkblue btn-icon  mobile_menu" type="button"><i class="fas fa-bars text-white"></i></button>
+            <button class="btn bgdarkblue btn-icon float-right right_icon_toggle_btn mr-3" type="button"><i class="fas fa-arrow-right text-white"></i></button>
+            <ul class="navbar-nav mt-5">
+                <li class="dropdown">
+                    <a href="#search" class="main_search dropdown-toggle" title="Search..." data-toggle="dropdown" role="button"><i class="fas fa-search"></i></a>
+                    <ul class="dropdown-menu slideUp2 body">
+                        <div class="input-group SearchBar">
+                            <input type="text" class="form-control" placeholder="Search this blog">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </ul>
+
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" title="App" data-toggle="dropdown" role="button"><i class="fas fa-braille"></i></a>
+                    <ul class="dropdown-menu slideUp2">
+                        <li class="header">App Sortcute</li>
+                        <li class="body">
+                            <ul class="menu app_sortcut list-unstyled">
+                                <li>
+                                    <a href="image-gallery.html">
+                                        <div class="icon-circle mb-2 bg-blue">
+                                            <img src="assets/images/left.png">
+                                        </div>
+                                        <p class="mb-0">Lorem</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle mb-2 bg-amber">
+                                            <img src="assets/images/left.png">
+                                        </div>
+                                        <p class="mb-0">Lorem</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="events.html">
+                                        <div class="icon-circle mb-2 bg-green">
+                                            <img src="assets/images/left.png">
+                                        </div>
+                                        <p class="mb-0">Lorem</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <div class="icon-circle mb-2 bg-purple">
+                                            <img src="assets/images/left.png">
+                                        </div>
+                                        <p class="mb-0">Lorem</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle mb-2 bg-red">
+                                            <img src="assets/images/left.png">
+                                        </div>
+                                        <p class="mb-0">Lorem</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle mb-2 bg-grey">
+                                            <img src="assets/images/left.png">
+                                        </div>
+                                        <p class="mb-0">Lorem</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" title="Notifications" data-toggle="dropdown" role="button" aria-expanded="true"><i class="fas fa-bell"></i>
+                        <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+                    </a>
+                    <ul class="dropdown-menu slideUp2">
+                        <li class="header">Notifications</li>
+                        <li class="body">
+                            <ul class="menu list-unstyled">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-blue"><i class="fas fa-user"></i></div>
+                                        <div class="menu-info">
+                                            <h4>8 New Members joined</h4>
+                                            <p><i class="zmdi zmdi-time"></i>14 mins ago </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-amber"><i class="fas fa-user"></i></div>
+                                        <div class="menu-info">
+                                            <h4>4 Sales made</h4>
+                                            <p><i class="zmdi zmdi-time"></i>22 mins ago </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-red"><i class="fas fa-user"></i></div>
+                                        <div class="menu-info">
+                                            <h4><b>Nancy Doe</b> Deleted account</h4>
+                                            <p><i class="zmdi zmdi-time"></i>3 hours ago </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-green"><i class="zmdi zmdi-edit"></i></div>
+                                        <div class="menu-info">
+                                            <h4><b>Nancy</b> Changed name</h4>
+                                            <p><i class="zmdi zmdi-time"></i>2 hours ago </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-grey"><i class="fas fa-user"></i></div>
+                                        <div class="menu-info">
+                                            <h4><b>John</b> Commented your post</h4>
+                                            <p><i class="zmdi zmdi-time"></i>4 hours ago </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-purple"><i class="fas fa-user"></i></div>
+                                        <div class="menu-info">
+                                            <h4><b>John</b> Updated status</h4>
+                                            <p><i class="zmdi zmdi-time"></i>3 hours ago </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-light-blue"><i class="fas fa-user"></i></div>
+                                        <div class="menu-info">
+                                            <h4>Settings Updated</h4>
+                                            <p><i class="zmdi zmdi-time"></i>Yesterday </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer"><a href="javascript:void(0);">View All Notifications</a> </li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="app_calendar" title="Add Quick Link"><i class="fas fa-star"></i></a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" title="Quick Links" data-toggle="dropdown" role="button" aria-expanded="true"><i class="fas fa-link"></i>
+
+                    </a>
+                    <ul class="dropdown-menu slideUp2 QuickLinks">
+                        <li class="header">Quick Links</li>
+                        <li class="body">
+                            <ul class="menu list-unstyled">
+                                <li>
+                                    <a href="#">Department<i class="fas fa-times"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Department<i class="fas fa-times"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Department<i class="fas fa-times"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle js-right-sidebar" title="Setting" data-toggle="dropdown" role="button" aria-expanded="true"><i class="fas fa-cog zmdi-hc-spin"></i></a>
+                    <ul class="dropdown-menu slideUp2">
+                        <li class="header">Setting</li>
+                        <li class="body">
+                            <ul class="menu list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-lock-open w-30"></i>Change Password</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-exclamation w-30"></i>Complaints</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-handshake w-30"></i>Meeting</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-bell w-30"></i>Reminder</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-user-shield w-30"></i>Privacy Setting</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-envelope-open-text w-30"></i>Notifications</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-exclamation-triangle w-30"></i>Error Info</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-comments w-30"></i>Messenger</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-toilet-paper w-30"></i>Leave Request</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-calendar-alt w-30"></i>Duty Roster</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fas fa-info-circle w-30"></i>Personal Information</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="mega-menu" title="Sign Out" id="A_logOut" url="/"><i class="fas fa-power-off"></i></a></li>
+            </ul>
+        </div>
+
+        <aside id="leftsidebar" class="sidebar">
+            <div class="navbar-brand">
+                <button class="btn-menu ls-toggle-btn " type="button"><i class="fas fa-bars"></i></button>
+                <a href="#">
+                    <img src="/assets/images/new.gif" width="80" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info">
+                            <div class="image" runat="server" id="div_profimg">
+                                <img src="/assets/images/profile_av.jpg" alt="User">
+                            </div>
+                            <div class="detail">
+                                <h4>Michael</h4>
+                                <small runat="server" id="lbl_Name"></small>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="menu-toggle"><i class="fas fa-notes-medical"></i><span>Masters</span></a>
+                        <ul class="ml-menu">
+                            <li><a href="#">Symptoms</a></li>
+                            <li><a href="#">Duration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-toggle"><i class="fas fa-chart-line"></i><span>Report</span></a>
+                        <ul class="ml-menu">
+                            <li><a href="#">lorem</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-toggle"><i class="fas fa-chart-line"></i><span>Setting</span></a>
+                        <ul class="ml-menu">
+                            <li><a href="#">lorem</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="content">
+
+            <div class="body_scroll">
+                <div class="container-fluid">
+                    <div class="row">
+                        <asp:ContentPlaceHolder ID="headName" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+        </section>
+        <div class="MsgPopUp">
+        </div>
+
+        <%: Scripts.Render("~/bundles/DashJS") %>
+
+
+        <script>
+
+            $(document).on('click', '.nav-url', function () {
+                var url = $(this).attr('url');
+                location.replace(url);
+            });
+
+            $(document).on('click', '#A_logOut', function () {
+                var url = $(this).attr('url');
+                location.replace(url);
+            });
+
+
+            window.onload = (event) => {
+                $(".loaderShow").fadeOut();
+
+            };
+
+        </script>
+
+
+         <script>
+             $(function () {
+                 $('[data-toggle="tooltip"]').tooltip()
+             })
+         </script>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder_BottomScripts" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+
+</body>
+</html>
+

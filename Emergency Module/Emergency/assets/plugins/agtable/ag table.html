@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="homepage.css">
+
+</head>
+
+<body>
+
+    <main id="example-wrapper" class="page-content">
+        <div class="example-toolbar collapsed">
+            <div class="options-container">
+                <div>
+                    <label for="data-size">Data Size:</label>
+                    <select onchange="onDataSizeChanged(this.value)" id="data-size">
+                </select>
+
+                    <span id="message" style="margin-left: 10px;">
+                    <i class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i>
+                </span>
+                </div>
+                <div>
+                    <label for="grid-theme">Theme:</label>
+
+                    <select onchange="onThemeChanged()" id="grid-theme">
+                    <option value="">-none-</option>
+                    <option value="ag-theme-alpine" selected>Alpine</option>
+                    <option value="ag-theme-alpine-dark">Alpine Dark</option>
+                    <option value="ag-theme-balham">Balham</option>
+                    <option value="ag-theme-balham-dark">Balham Dark</option>
+                    <option value="ag-theme-material">Material</option>
+                </select>
+
+                </div>
+                <div>
+                    <label for="global-filter">Filter:</label>
+                    <input placeholder="Filter any column..." type="text" oninput="onFilterChanged(this.value)" ondblclick="filterDoubleClicked(event)" class="hide-when-small" id="global-filter" style="flex: 1" />
+                </div>
+            </div>
+        </div>
+        <div class="options-expander">
+            <span id="messageText"></span>
+            <div class="options-toggle" onclick="toggleOptionsCollapsed()"><span>&nbsp;</span>OPTIONS</div>
+            <span>&nbsp;</span>
+        </div>
+
+        <!-- The table div -->
+        <section id="grid-wrapper" style="padding: 1rem; padding-top: 0;">
+            <div id="myGrid" style="flex: 1 1 auto; overflow: hidden;" class="ag-theme-alpine"></div>
+        </section>
+    </main>
+    <!-- example wrapper -->
+
+    <script src="grid.js"></script>
+    <script src="example.js"></script>
+
+</body>
+
+</html>

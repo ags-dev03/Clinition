@@ -1,0 +1,62 @@
+/* Use a media query to add a break point at 1199px: */
+@media screen and (max-width:1199px) {
+.buttons nav li {
+    width: 125px;
+    height: 1.8em;
+    font-size: 14px;
+}
+}
+/* Use a media query to add a break point at 991px: */
+@media screen and (max-width:991px) {
+
+}
+
+
+
+/* Use a media query to add a break point at 767px: */
+@media screen and (max-width:767px) {
+h1{
+	font-size:30px;
+}
+.login-icon {
+    max-width: 23px;
+    margin-right: 10px;
+}
+.logo-img {
+    max-width: 60px;
+}
+.col-md-6.text-right{
+	    text-align: left!important;
+}
+.col-md-6.text-right a{
+	padding-left:.5rem!important;
+}
+.buttons {
+    transform: translate(4%, 0%);
+}
+.buttons nav li {
+    font-size: 12px;
+	    width: 100px;
+}
+.login-background {
+	padding-bottom:25px;
+}
+}
+
+/* Use a media query to add a break point at 575px: */
+@media screen and (max-width: 575px){
+
+.col-sm-6.text-center img {
+    max-width: 150px;
+}
+h1 {
+    font-size: 24px;
+}
+.login-icon {
+    max-width: 18px;
+	margin-top: -5px;
+}
+.mt-4{
+	margin-top:10px!important;
+}
+}

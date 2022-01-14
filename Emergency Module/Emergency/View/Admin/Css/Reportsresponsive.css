@@ -1,0 +1,23 @@
+@media screen and (max-width: 1170px) {
+    .hamburger {
+        width: 26px;
+        height: 26px;
+        margin-left: -13px;
+        margin-top: -25px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .ReportButton i {
+        margin-right: 9px;
+    }
+}
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: .0rem;
+    }
+    h4 {
+        font-size: 0.9rem;
+        margin-bottom: .4rem;
+    }
+}

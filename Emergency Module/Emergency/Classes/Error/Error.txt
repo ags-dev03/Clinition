@@ -1,0 +1,145 @@
+*********************************
+DateTime: 21-11-20 04:27:00 PM
+Message: {"multicast_id":4821803138322026659,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+Inner Exception: 
+StackTrace:    at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at Emergency.ErrorHandling.Save(Exception ex, String responseMsg) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 465
+   at Emergency.Common.SendPushNotification(DataTable dt) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 440
+   at Emergency.Classes.Services.ConsultSave(String ptOpdID) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Services.asmx.cs:line 1690
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethod(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethodFromRawParams(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.RestHandler.InvokeMethod(HttpContext context, WebServiceMethodData methodData, IDictionary`2 rawParams)
+   at System.Web.Script.Services.RestHandler.ExecuteWebServiceCall(HttpContext context, WebServiceMethodData methodData)
+   at System.Web.Script.Services.RestHandler.ProcessRequest(HttpContext context)
+   at System.Web.Script.Services.ScriptHandlerFactory.HandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+Source: 
+*********************************
+
+*********************************
+DateTime: 21-11-20 04:27:01 PM
+Message: {"multicast_id":5076983818793373502,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+Inner Exception: 
+StackTrace:    at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at Emergency.ErrorHandling.Save(Exception ex, String responseMsg) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 465
+   at Emergency.Common.SendPushNotification(DataTable dt) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 440
+   at Emergency.Classes.Services.ConsultSave(String ptOpdID) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Services.asmx.cs:line 1690
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethod(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethodFromRawParams(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.RestHandler.InvokeMethod(HttpContext context, WebServiceMethodData methodData, IDictionary`2 rawParams)
+   at System.Web.Script.Services.RestHandler.ExecuteWebServiceCall(HttpContext context, WebServiceMethodData methodData)
+   at System.Web.Script.Services.RestHandler.ProcessRequest(HttpContext context)
+   at System.Web.Script.Services.ScriptHandlerFactory.HandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+Source: 
+*********************************
+
+*********************************
+DateTime: 21-11-20 04:27:01 PM
+Message: {"multicast_id":3131387580639039865,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+Inner Exception: 
+StackTrace:    at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at Emergency.ErrorHandling.Save(Exception ex, String responseMsg) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 465
+   at Emergency.Common.SendPushNotification(DataTable dt) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 440
+   at Emergency.Classes.Services.ConsultSave(String ptOpdID) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Services.asmx.cs:line 1690
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethod(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethodFromRawParams(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.RestHandler.InvokeMethod(HttpContext context, WebServiceMethodData methodData, IDictionary`2 rawParams)
+   at System.Web.Script.Services.RestHandler.ExecuteWebServiceCall(HttpContext context, WebServiceMethodData methodData)
+   at System.Web.Script.Services.RestHandler.ProcessRequest(HttpContext context)
+   at System.Web.Script.Services.ScriptHandlerFactory.HandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+Source: 
+*********************************
+
+*********************************
+DateTime: 21-11-20 04:27:01 PM
+Message: {"multicast_id":36637726718523861,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+Inner Exception: 
+StackTrace:    at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at Emergency.ErrorHandling.Save(Exception ex, String responseMsg) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 465
+   at Emergency.Common.SendPushNotification(DataTable dt) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 440
+   at Emergency.Classes.Services.ConsultSave(String ptOpdID) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Services.asmx.cs:line 1690
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethod(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethodFromRawParams(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.RestHandler.InvokeMethod(HttpContext context, WebServiceMethodData methodData, IDictionary`2 rawParams)
+   at System.Web.Script.Services.RestHandler.ExecuteWebServiceCall(HttpContext context, WebServiceMethodData methodData)
+   at System.Web.Script.Services.RestHandler.ProcessRequest(HttpContext context)
+   at System.Web.Script.Services.ScriptHandlerFactory.HandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+Source: 
+*********************************
+
+*********************************
+DateTime: 21-11-20 04:27:22 PM
+Message: {"multicast_id":7793713846655381091,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+Inner Exception: 
+StackTrace:    at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at Emergency.ErrorHandling.Save(Exception ex, String responseMsg) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 465
+   at Emergency.Common.SendPushNotification(DataTable dt) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Common.cs:line 440
+   at Emergency.Classes.Services.ConsultSave(String ptOpdID) in D:\nisar\Emergency\Emergency.root\Emergency\Emergency\Classes\Services.asmx.cs:line 1690
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethod(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.WebServiceMethodData.CallMethodFromRawParams(Object target, IDictionary`2 parameters)
+   at System.Web.Script.Services.RestHandler.InvokeMethod(HttpContext context, WebServiceMethodData methodData, IDictionary`2 rawParams)
+   at System.Web.Script.Services.RestHandler.ExecuteWebServiceCall(HttpContext context, WebServiceMethodData methodData)
+   at System.Web.Script.Services.RestHandler.ProcessRequest(HttpContext context)
+   at System.Web.Script.Services.ScriptHandlerFactory.HandlerWrapper.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr rootedObjectsPointer, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+Source: 
+*********************************
+

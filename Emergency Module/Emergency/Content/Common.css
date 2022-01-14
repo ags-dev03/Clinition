@@ -1,0 +1,220 @@
+﻿@charset "UTF-8";
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBoldItalic';
+    src: url('../fonts/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url('../fonts/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('../fonts/OpenSans-Italic.woff2') format('woff2'),
+        url('../fonts/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBoldItalic';
+    src: url('../fonts/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-LightItalic';
+    src: url('../fonts/OpenSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/OpenSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+:root {
+    --ThemeFont: #015184;
+    --ThemeAlterFont: #fff;
+    --ThemeMenuHoverColor: #015184;
+    --ThemeMenuActiveColor: #015184;
+    --ThemetextColor: #015184;
+    --ThemeBackgroundColor: #015184;
+    --ThemeFontFamily: 'OpenSans-Regular' !important;
+    --ThemeFontWeightBold: bold;
+    --ThemeFontWeightLight: lighter;
+    --ThemeFontWeightBolder: bolder;
+    --ThemeFontWeightNormal: normal;
+    --ThemeBodyColor: #262626;
+    --ThemeBackgroundColor: #015184;
+    --ThemeAlertDangerColor: #7b0303;
+    --ThemeAlertSecureColor: #0b5602f2;
+    --ThemeBorderBottomDanger: #dc3545;
+    --ThemeButtonHoverBGColor: #1dcbe4;
+    --ThemeButtonHoverColor: #000;
+    --ThemeBGColor: #fff;
+    --ThemeBackgroundGreenColor: #0faf81;
+}
+.msgDanger {
+    background-color: var(--ThemeAlertDangerColor);
+}
+.msgSecure {
+    background-color: var(--ThemeAlertSecureColor);
+}
+.MsgPopUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+    color: var(--ThemeAlterFont);
+    border-radius: 4px;
+    font-weight: bolder;
+    z-index: 9999;
+}
+
+.Msg {
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.div_loader {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0) none repeat scroll 0% 0%;
+    z-index: 999999;
+    position: fixed;
+    opacity: 0.3;
+    display: none;
+}
+
+.loader_img {
+    z-index: 999999;
+    opacity: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -12px auto auto -12px;
+    display: none;
+    background: #ededed;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.font_8 {
+    font-size: 8px;
+    cursor:default;
+}
+.popup {
+    width: 900px;
+    margin: auto;
+    text-align: center
+}
+
+    .popup img {
+        width: 200px;
+        height: 200px;
+        cursor: pointer
+    }
+
+.showd {
+    z-index: 999;
+    display: none;
+}
+
+    .showd .overlay, .loaderShow {
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.66);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .showd .img-showd {
+        width: 600px;
+        height: 400px;
+        background: #FFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+.img-showd span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.img-showd img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

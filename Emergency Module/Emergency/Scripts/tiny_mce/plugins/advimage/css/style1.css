@@ -1,0 +1,214 @@
+
+.topbackimage {
+	background-image: url(../images/top-bg.jpg);
+	height: 54px;
+}
+.leftrightborder {
+	background-color: #FFFFFF;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #c9dba4;
+	border-left-color: #c9dba4;
+}
+.bottombg {
+	background-image: url(images/bottom-bg.jpg);
+	height: 19px;
+}
+.vardana18white {
+	font-family: Verdana;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.headborder {
+	border: 1px solid #bfbfbf;
+}
+.arailblacknone12 {
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #376092;
+}
+.arailblacknone12 a{
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #376092;
+	text-decoration: none;
+}
+.arailblacknone12 a:hover{
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #629C2B;
+}
+
+.fadeline {
+	background-image: url(images/fade-line.jpg);
+	height: 2px;
+}
+.arailblacknone12 {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #376092;
+}
+.arial11boldblack {
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+}
+.arial11boldblack-2 {
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #595959;
+}
+.arial11boldblack a{
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.arial11boldblack a:hover{
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #629038;
+	text-decoration: none;
+}
+
+.textbox1 {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: normal;
+	color: #626262;
+	background-color: #f2f2f2;
+	height: 20px;
+	width: 200px;
+	border: 1px solid #bcbcbc;
+}
+.textbox2 {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	background-color: #FFFFFF;
+	height: 20px;
+	width: 163px;
+	border: 1px solid #bcbcbc;
+}
+
+.arialnoneblacklight {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #464444;
+}
+.arialnoneblacklight-2 {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #3D7ECF;
+}
+.arialnoneblacklight-2 a{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #3D7ECF;
+}
+.arialnoneblacklight-2 a:hover{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #82AD30;
+}
+
+.textarea1 {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: normal;
+	color: #626262;
+	background-color: #f2f2f2;
+	height: 100px;
+	width: 300px;
+	border: 1px solid #bcbcbc;
+}
+.arial11boldred {
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #CC3300;
+}
+.arial11boldred a{
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #CC3300;
+	text-decoration: none;
+}
+.arial11boldred a:hover{
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #626262;
+	text-decoration: none;
+}
+.listmenu1 {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #626262;
+	background-color: #f2f2f2;
+	height: 18px;
+	width: 200px;
+	border: 1px solid #bcbcbc;
+}.logimbg {
+	background-image: url(images/login-shape-01.jpg);
+	height: 244px;
+	width: 573px;
+	background-repeat: no-repeat;
+}
+.adminlogin {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #404040;
+}
+.adminbg2 {
+	background-image: url(images/login-shape-02.jpg);
+	height: 154px;
+	width: 332px;
+	background-repeat: no-repeat;
+}
+.arial10none {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #595959;
+}
+.vard10white {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.vard10white a{
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vard10white a:hover{
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
